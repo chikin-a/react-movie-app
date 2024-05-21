@@ -1,0 +1,48 @@
+@import './variables';
+@import './mixins';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: $color-white-100;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+#root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: $color-white-100;
+}
+
+body {
+  background: #121829;
+  background-image: url('/images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.title {
+  color: $color-grey-50;
+  @include heading-h1;
+  margin-bottom: 16px;
+}
+
+.desc {
+  font-size: 16px;
+  color: $color-grey-300;
+  max-width: 588px;
+  margin-bottom: 24px;
+  line-height: 150%;
+
+  span {
+    color: $color-primary-300;
+  }
+}
