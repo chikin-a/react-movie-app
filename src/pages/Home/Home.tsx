@@ -1,4 +1,5 @@
 import SearchInput from '../../components/SearchInput/SearchInput'
+import Tabs from '../../components/Tabs/Tabs'
 import './Home.scss'
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
           make a suggestion. 😉
         </p>
         <SearchInput />
+        <Tabs />
       </div>
     </main>
   )
