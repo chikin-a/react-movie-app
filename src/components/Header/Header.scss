@@ -27,7 +27,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 16px 0;
+  padding: 16px 22px;
 
   &.scrolled-past-threshold {
     background-color: rgba(0,0,0,.4);
@@ -65,32 +65,4 @@
 .logo {
   display: grid;
   grid-area: auto;
-}
-
-//
-#root {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  color: #fff;
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
-}
-
-body {
-  background: #121829;
-  background-image: url('/images/background.png');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
