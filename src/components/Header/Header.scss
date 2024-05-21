@@ -6,7 +6,16 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 16px 0;
+  padding: 16px 22px;
+
+  &.scrolled-past-threshold {
+    background-color: rgba(0,0,0,.4);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
 
   &-container {
     display: flex;
