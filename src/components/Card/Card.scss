@@ -1,0 +1,64 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.card {
+  height: 480px;
+  width: 282px;
+  border-radius: 11px;
+  background-color: rgb(32, 40, 62, 0.9);
+  padding: 8px;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(32, 40, 62, 0.6);
+  }
+
+  &__overlay {
+    border-radius: 12px;
+    overflow: hidden;
+    background-image: url(/images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__poster {
+    position: relative;
+  }
+
+  &__vote {
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    border-radius: 8px;
+    background-color: $color-black-65;
+    padding: 4px 8px;
+    backdrop-filter: blur(8px);
+
+    span {
+      @include body-regular;
+      color: $color-warning-500;
+    }
+  }
+
+  &__rating {
+    width: 16px;
+    height: 16px;
+    background-image: url(/icons/card/star.svg);
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  &__title {
+    @include link-regular;
+    color: $color-grey-50;
+    padding: 8px;
+  }
+}

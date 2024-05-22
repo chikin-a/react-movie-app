@@ -1,3 +1,6 @@
 export interface CardModel {
-  title: string
+  id: number
+  name: string
+  poster: string
+  voteAverage: number
 }
