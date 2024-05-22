@@ -1,3 +1,20 @@
 .tabs-container {
     margin-top: 80px;
+    position: relative;
+}
+
+.tabs-sub {
+    position: absolute;
+    top: 80px;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #767E94;
+
+    span {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: inherit;
+    }
 }
