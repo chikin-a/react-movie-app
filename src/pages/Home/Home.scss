@@ -2,3 +2,9 @@
   padding-top: 160px;
 }
 
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
+}
