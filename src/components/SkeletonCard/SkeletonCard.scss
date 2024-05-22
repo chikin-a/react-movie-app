@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.skeleton-card {
+  height: 480px;
+  width: 282px;
+  border-radius: 11px;
+  background-color: rgb(32, 40, 62, 0.9);
+  padding: 8px;
+
+  &__overlay {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  &__poster {
+    position: relative;
+    background-color: rgb(43, 50, 68);
+    height: 399px;
+    border-radius: 8px;
+  }
+
+  &__title {
+    margin: 8px;
+    margin-top: 24px;
+    padding: 12px;
+    background-color: rgb(43, 50, 68);
+    border-radius: 4px;
+  }
+}
