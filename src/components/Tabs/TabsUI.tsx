@@ -47,17 +47,6 @@ const Styles = () => {
             color: #fff;
             outline: none;
         }
-        
-        .CustomTabPanelIntroduction {
-            width: 100%;
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 0.875rem;
-            padding: 20px 12px;
-            background: transparent;
-            border: 1px solid transparent;
-            border-radius: 12px;
-            opacity: 0.6;
-        }
         `}
     </style>
   );
