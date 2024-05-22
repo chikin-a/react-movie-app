@@ -11,6 +11,7 @@ import { MediaItem, Movie, TVShow } from './HomeTypes'
 const Home = () => {
   const [data, setData] = useState<MediaItem[]>([])
   const [page, setPage] = useState(1)
+  const [loading, setLoading] = useState(true)
   const [category, setCategory] = useState<TabsCategoriesProps>('all')
 
   useEffect(() => {
@@ -18,6 +19,12 @@ const Home = () => {
       try {
         const result = await fetchMoviesByPageAndCategory(page, category)
         setData(result.results)
+
+        console.log(result)
+
+        setTimeout(() => {
+          setLoading(false)
+        }, 500)
       } catch (error) {
         console.error('Failed to fetch movies:', error)
       }
@@ -38,15 +45,25 @@ const Home = () => {
           watched till date. Explore what I have watched and also feel free to
           make a suggestion. 😉
         </p>
+
         <SearchInput />
+
         <Tabs handleCategoryChange={handleCategoryChange} />
-        {data.map((el) => (
-          <div key={el.id}>
-            {el.media_type === 'movie'
-              ? (el as Movie).title
-              : (el as TVShow).name}
-          </div>
-        ))}
+        <div className='movies'>
+          {loading
+            ? Array(20)
+                .fill(0)
+                .map((_, i) => <SkeletonCard key={i} />)
+            : data.map((el) => (
+                <Card
+                  key={el.id}
+                  id={el.id}
+                  name={el.title || el.name}
+                  poster={el.poster_path}
+                  voteAverage={el.vote_average}
+                />
+              ))}
+        </div>
       </div>
     </main>
   )
