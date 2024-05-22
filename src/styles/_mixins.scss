@@ -1,0 +1,93 @@
+@mixin caption {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 400;
+  line-height: 16px;
+}
+@mixin heading-h1 {
+  font-size: 4rem; /* 64px */
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: -0.02;
+}
+@mixin heading-h2 {
+  font-size: 3rem; /* 48px */
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: -0.02;
+}
+@mixin heading-h3 {
+  font-size: 2rem; /* 32px */
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -0.02;
+}
+@mixin heading-h4 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.015;
+}
+@mixin heading-h5 {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.015;
+}
+@mixin heading-h6 {
+  font-size: 1rem; /* 16px */
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.015;
+}
+@mixin body-large {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 400;
+  line-height: 32px;
+}
+@mixin body-regular {
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+  line-height: 24px;
+}
+@mixin body-small {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 400;
+  line-height: 24px;
+}
+@mixin body-extra-small {
+  font-size: 0.75rem; /* 12px */
+  font-weight: 400;
+  line-height: 16px;
+}
+@mixin overline-regular {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 24px;
+  letter-spacing: 0.04;
+}
+@mixin overline-small {
+  font-size: 0.75rem; /* 12px */
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 16px;
+  letter-spacing: 0.04;
+}
+@mixin link-regular {
+  font-size: 1rem; /* 16px */
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.02;
+}
+@mixin link-small {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.02;
+}
+@mixin link-extra-small {
+  font-size: 0.75rem; /* 12px */
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.02;
+}

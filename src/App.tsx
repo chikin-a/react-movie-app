@@ -12,6 +12,7 @@ const App: React.FC = () => {
         <Route path='/movies' element={<div>movies</div>} />
         <Route path='/tv-shows' element={<div>tv shows</div>} />
         <Route path='/suggest-me' element={<div>suggest me</div>} />
+        <Route path='*' element={<div>Error 404</div>} />
       </Routes>
     </>
   )
