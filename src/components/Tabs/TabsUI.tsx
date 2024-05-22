@@ -35,7 +35,7 @@ const Styles = () => {
             background-color: transparent;
             width: 100%;
             padding: 10px 12px;
-            margin: 6px;
+            margin: 8px;
             border: none;
             border-radius: 7px;
             display: flex;
